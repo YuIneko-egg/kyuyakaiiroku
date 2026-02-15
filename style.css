@@ -575,12 +575,12 @@ font-size:14px;   /* 少し小さく */
 
 
 summary{
-max-width:95%;
-font-size:clamp(16px,4vw,22px);
-letter-spacing:0.2em;
-padding-left:40px;  /* 左に余白を作る */
+    max-width:95%;
+    height:60px;          /* ← 固定高さ */
+    aspect-ratio:auto;    /* ← 比率解除 */
+    background-size:100% 100%;
+  }
 
-}
 
 .pv iframe{
 height:220px;
