@@ -443,7 +443,7 @@ drop-shadow(0 0 6px rgba(255,255,255,0.6))
 drop-shadow(0 0 18px rgba(200,160,80,0.6));
     position: relative;
   z-index: 10; /* 目玉より下 */
-
+margin-top: 10px;
 }
 
 .pv{
@@ -579,7 +579,11 @@ summary{
     height:60px;          /* ← 固定高さ */
     aspect-ratio:auto;    /* ← 比率解除 */
     background-size:100% 100%;
-    font-size:clamp(14px,4vw,18px);
+     width:90%;                /* 少し余白を持たせる */
+    white-space:nowrap;       
+    font-size:clamp(12px,3.5vw,18px);
+     letter-spacing:0.1em;   /* ここを小さく */
+    padding-left:40px; 
   }
 .pv iframe{
 height:220px;
