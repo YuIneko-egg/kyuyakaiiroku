@@ -9,21 +9,32 @@ box-sizing:border-box;
 }
 
 body{
-font-family:"Noto Serif JP", serif;
-color:#f3efe6;
-line-height:1.9;
-letter-spacing:0.05em;
-overflow-x:hidden;
+  background-color:#050505;  /* ← ベースの黒を確実に敷く */
+  background-image:
+    url("img/higanbana.png"),
+    url("img/wasi.jpg"),
+    radial-gradient(circle at 50% 0%, rgba(0,60,80,0.25), transparent 70%);
+    
+  background-position:
+    bottom center,
+    center,
+    center;
 
-background:
-url("img/higanbana.png") bottom center/100% auto no-repeat,
-url("img/wasi.jpg"),
-radial-gradient(circle at 50% 0%, rgba(0,60,80,0.25), transparent 70%),
-linear-gradient(to bottom,#050505,#0d0d13 60%,#000);
+  background-size:
+    100% auto,
+    cover,
+    cover;
 
-background-blend-mode:normal,overlay,normal,normal;
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat;
+
+  background-blend-mode:
+    normal,
+    overlay,
+    normal;
 }
-
 .eye{
 position:fixed;
 top:5%;
